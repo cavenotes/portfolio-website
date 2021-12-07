@@ -7,13 +7,13 @@ body {
   color: #4a4a4a;
  }
 
+ a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+
 a:visited { /* visited link */
   color: #ff7f50;
 }
-
-a {
- color: #ff7f50;
- text-decoration: none; /* No underlining */
 }
 a:hover
 a:focus {
@@ -71,4 +71,14 @@ Tertiery Color (water): #73baf2
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
 }
