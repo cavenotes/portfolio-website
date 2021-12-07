@@ -6,6 +6,15 @@ body {
    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
  }
+
+ a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
  /*
 Colors used:
 Primary Color (sand): #fffefa;
