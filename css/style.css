@@ -23,16 +23,7 @@ a:focus {
 a:active { /* selected link */
   color: #994c30;
 }
-.button {
-  display: inline-block;
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
+
  /*
 Colors used:
 Primary Color (sand): #fffefa;
@@ -65,4 +56,19 @@ Tertiery Color (water): #73baf2
 
  img {
   width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
 }
