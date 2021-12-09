@@ -5,88 +5,108 @@ header {
   border: 5px solid #30596C;
   position: ;
   display: inline-block;
+  width: 25%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-   background-color: #353431;
-   font-family: 'Raleway', sans-serif;
-   font-size: 16px; /* Sets the font size to 16px */
-   font-weight: 200; /* Sets the font weight to 200 */
-   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  background-color: #353431;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 200;
+  /* Sets the font weight to 200 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #DDDBDB;
- }
+}
 
- a {
+a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #ff7f50;
 }
-a:hover
-a:focus {
- color: #cc6540;
- text-decoration: underline; /* Underlining when hovering over a link */
+
+a:hover a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
- /*
-Colors used:
-Primary Color (sand): #fffefa;
-Secondary Color (lightgold): #ecebbc;
-Tertiery Color (water): #73baf2
-*/
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
 
- h1, h2, h3, h4 {
-   line-height: 1.4;
- }
- h1 {
-   font-size: 2.75em;
-   font-weight: 200;
- }
+h1 {
+  font-size: 2.75em;
+  font-weight: 200;
+}
 
- h2 {
-   font-size: 2.25em;
-   font-weight: 200;
- }
+h2 {
+  font-size: 2.25em;
+  font-weight: 200;
+}
 
- h3 {
-   font-size: 1.75em;
-   font-weight: 200;
- }
- h4 {
-   font-size: 1.35em;
-   font-weight: 200;
- }
+h3 {
+  font-size: 1.75em;
+  font-weight: 200;
+}
 
+h4 {
+  font-size: 1.35em;
+  font-weight: 200;
+}
 
- img {
+img {
   width: 100%;
 }
 
 .button, .button:visited {
   display: inline-block;
   background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
+
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
 }
