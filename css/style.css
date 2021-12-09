@@ -57,7 +57,7 @@ Tertiery Color (water): #73baf2
   width: 100%;
 }
 
-.button {
+.button, .button:visited {
   display: inline-block;
   background-color: #ff7f50;
   color: #ffffff; /* needed to override the default link color */
