@@ -1,15 +1,26 @@
 header {
   background-color: #B18351;
-  padding: 20px 20px 5px 20px;
-  margin: 20px;
-  border: 5px solid #30596C;
-  position: ;
-  display: inline-block;
-  width: 25%;
+  text-align: center;
+  padding: 10px 0;
 }
-
-* {
-  box-sizing: border-box;
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2b8aa2;
+}
+nav > ul > li > a: visited{
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #65b2c6;
 }
 
 body {
@@ -86,20 +97,17 @@ img {
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
-
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
@@ -114,3 +122,16 @@ img {
   margin: 25px 0;
 
   #projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+  #hero h1 {
+  text-align: center;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+.logo {
+  max-width: 250px;
+}
