@@ -15,12 +15,16 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color: #2b8aa2;
+  display: inline-block;
+  width: 100%;
 }
-nav > ul > li > a: visited{
+nav > ul > li > a: visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #65b2c6;
+  display: inline-block;
+  width: 100%;
 }
 
 body {
@@ -41,7 +45,7 @@ a {
   /* No underlining */
 }
 
-a:visited {
+a: visited {
   /* visited link */
   color: #ff7f50;
 }
@@ -120,7 +124,7 @@ img {
 }
 .row {
   margin: 25px 0;
-
+}
   #projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 #hero h1 {
@@ -131,7 +135,7 @@ img {
   padding: 0.67em 0;
 }
 #hero {
-  background-color: #ffe4c4;
+  background-color: #B18351;
   padding: 20px 0;
   display: inline-block;
   width: 100%
