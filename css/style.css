@@ -2,8 +2,8 @@ header {
   background-color: #B18351;
   text-align: center;
   padding: 10px 0;
-  box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.5)
   position: relative;
+  box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.5)
 }
 
 nav > ul {
