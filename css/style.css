@@ -176,6 +176,9 @@ img {
   #hero span {
     display: block;
   }
+  #hero h1 {
+    font-size: 40px;
+  }
   .col-md-6 {
   width: 50%;
 }
