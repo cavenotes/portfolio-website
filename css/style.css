@@ -6,14 +6,16 @@ header {
   box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.5)
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
+
+nav>ul>li {
   display: inline-block;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -21,7 +23,8 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
 }
-nav > ul > li > a:visited {
+
+nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -34,11 +37,8 @@ body {
   background-color: #353431;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 200;
-  /* Sets the font weight to 200 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
   color: #DDDBDB;
 }
 
@@ -104,39 +104,48 @@ img {
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
 }
+
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
+
 .row {
   margin: 25px 0;
 }
-  #projects .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 #hero h1 {
   text-align: center;
 }
+
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
 }
+
 #hero {
   background-color: #B18351;
   padding: 20px 0;
@@ -146,8 +155,35 @@ img {
 
 .logo {
   max-width: 250px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  body {
+      font-size: 18px;
+  }
+
+  #hero span {
+    display: block;
+  }
+  .col-md-6 {
   width: 50%;
 }
+[class*="col-"] {
+  float: left;
+}
+}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1440px) {}
