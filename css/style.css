@@ -139,6 +139,7 @@ img {
 
 #hero h1 {
   text-align: center;
+  font-size: 32px;
 }
 
 #hero h1 {
@@ -184,14 +185,31 @@ img {
 }
 [class*="col-"] {
   float: left;
+  padding: 10px;
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+#about-page h3 {
+  margin-top: 0;
 }
 
-@media only screen and (min-width: 1024px) {}
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+}
 
 @media only screen and (min-width: 1440px) {}
