@@ -90,8 +90,22 @@ h4 {
 
 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition-duration: 0.2s;
+  transition: 0.2s opacity;
+}
 .button, .button:visited {
   display: inline-block;
   background-color: #ff7f50;
@@ -112,6 +126,12 @@ img {
 }
 
 .button.contact {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition-duration: 0.2s;
+  transition-property: opacity;
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
@@ -155,15 +175,46 @@ img {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
-
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
-
+  .logo {
+    max-width: 150px;
+    padding-left: 15px;
+  }
   nav {
     width: auto;
     float: right;
@@ -203,6 +254,10 @@ img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.logo {
+  max-width: 150px;
+  padding-left: 15px;
 }
   .col-lg-7 {
     width: 58.33%;
