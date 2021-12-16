@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 header {
   background-color: #B18351;
   text-align: center;
@@ -128,6 +130,7 @@ img {
 .button.contact {
   text-decoration: none;
   padding: 10px;
+  margin-bottom: 30px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   transition-duration: 0.2s;
@@ -206,6 +209,16 @@ img {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+.social-icons {
+  text-align: center;
+}
+.social-icons svg {
+  max-width: 65px;
+  padding-left: 20px;
+}
+.project-imgs {
+  max-width: 200px;
+}
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -246,7 +259,6 @@ img {
 #about-page h3 {
   margin-top: 0;
 }
-
 }
 
 @media only screen and (min-width: 1024px) {
