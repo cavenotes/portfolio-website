@@ -6,4 +6,5 @@ function menuToggle() {
     x.className += ' responsive';
   } else {
     x.className = 'navtoggle';
+  }
 }
