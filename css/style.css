@@ -4,11 +4,21 @@
 
 header {
   background-color: #B18351;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: relative;
   box-shadow: 0px 5px 8px 0px rgba(50, 50, 50, 0.5)
 }
-
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -17,13 +27,16 @@ header {
 }
 .navtoggle li .icon {
   position: absolute;
+  padding-right: 0;
   right: 0;
   top: 2px;
   font-size: 20px;
 }
+
 nav>ul {
-  list-style-type: none;
-  padding: 0;
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
 }
 
 nav>ul>li>a {
@@ -32,7 +45,6 @@ nav>ul>li>a {
   font-weight: 700;
   color: #f7f7f7;
   display: inline-block;
-  width: 100%;
 }
 
 nav>ul>li>a:visited {
@@ -285,7 +297,9 @@ img {
     float: right;
     margin-top: 4px;
   }
-
+  nav > ul {
+  margin: 1em 0;
+}
   nav>ul>li {
     display: inline-block;
   }
