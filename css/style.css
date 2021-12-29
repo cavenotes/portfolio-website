@@ -11,6 +11,9 @@ header {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
@@ -18,9 +21,6 @@ header {
 }
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
-}
-.navtoggle li:not(:last-child) {
-  display: none;
 }
 .navtoggle, .navtoggle.responsive {
   position: relative;
